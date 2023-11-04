@@ -1,0 +1,107 @@
+/* blog-styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ec9523;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.main-content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.action-button {
+    background-color: #ec9523;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #005785;
+}
+
+.footer {
+    text-align: center;
+    background-color: #0071a4;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Additional Styles for Blog Listing or Writing Section */
+.blog-listing {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-listing h2 {
+    font-size: 20px;
+    color: #0071a4;
+}
+
+.blog-listing p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Styles for Blog Writing Section */
+.blog-writing {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-writing label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.blog-writing input[type="text"],
+.blog-writing textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.blog-writing button {
+    background-color: #0071a4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.blog-writing button:hover {
+    background-color: #005785;
+}

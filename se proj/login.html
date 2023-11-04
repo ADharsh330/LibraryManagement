@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function redirectBasedOnRole() {
+            var roleSelect = document.getElementById("role");
+            var selectedOption = roleSelect.options[roleSelect.selectedIndex].value;
+
+            switch (selectedOption) {
+                case "student":
+                    document.forms[0].action = "main.html";
+                    break;
+                case "teacher":
+                    document.forms[0].action = "teacher.html";
+                    break;
+                case "library_admin":
+                    document.forms[0].action = "admin.html";
+                    break;
+                default:
+                    // Handle any other case or provide a default action
+                    break;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body style="background-image: url('Library-Management-System.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="login-container">
+        <h1>Library Management System</h1>
+        <form action="main.html" method="post" onsubmit="return redirectBasedOnRole();">
+            <label for="role">Select Role:</label>
+            <select id="role" name="role" required>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="library_admin">Library Admin</option>
+            </select>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
+    

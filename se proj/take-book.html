@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="take-book.css">
+    <title>Library - Take a Book</title>
+</head>
+<body style="background-image: url('Library-Management-System.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <h1>List of Books</h1>
+    
+    <ul>
+        <li>
+            <span>Title: Book 1</span>
+            <span>Author: Author 1</span>
+            <button onclick="issueBook(1)">Issue</button>
+        </li>
+        <li>
+            <span>Title: Book 2</span>
+            <span>Author: Author 2</span>
+            <button onclick="issueBook(2)">Issue</button>
+        </li>
+        <!-- Add more books as needed -->
+    </ul>
+
+    <script>
+        function issueBook(bookId) {
+            // Implement book issuing logic here
+            alert("You have issued Book " + bookId);
+        }
+    </script>
+
+    <button><a href="main.html">Back to Main Page</a></button>
+</body>
+</html>
